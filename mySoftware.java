@@ -5,16 +5,16 @@ public class mySoftware {
             return;
         }
 
-         String operator = args[0];
-        double A;
-        double B;
+        String operator = args[0];
+        double A = 0;
+        double B = 0;
 
         try{
-         A = double.parseDouble(args[1]);
-         B = double.parseDouble(args[2]);
+         A = Double.parseDouble(args[1]);
+         B = Double.parseDouble(args[2]);
         }
         catch (NumberFormatException e){
-         system.out.println("Please enter a valid number.");
+            System.out.println("Please enter a valid number.");
         }
 
          Calculator calculator = null;
@@ -24,7 +24,7 @@ public class mySoftware {
                 calculator = new Addition();
                 break;
             case "-":
-                calculator = new Subtraction();
+                calculator = new Substraction();
                 break;
             case "*":
                 calculator = new Multiplication();
