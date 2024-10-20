@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, jsonify
 app = Flask(__name__)
 
 @app.route('/multiply/<int:number1>/<int:number2>')
