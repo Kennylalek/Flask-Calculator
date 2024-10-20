@@ -15,6 +15,6 @@ def add(number1, number2):
         "result": result
     }
     return jsonify(response)
-
-if __name__ == '__main__':
-    app.run(debug=True)
+# testing
+# if __name__ == '__main__':
+#     app.run(debug=True)
