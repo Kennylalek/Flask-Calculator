@@ -1,7 +1,5 @@
-from flask import Flask, request, jsonify
-app = Flask(__name__)
+from flask import jsonify
 
-@app.route('/operation/add/<int:number1>/<int:number2>')
 def add(number1, number2):
     try:
         result = number1 + number2
