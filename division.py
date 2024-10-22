@@ -1,18 +1,16 @@
-from flask import Flask, jsonify
-app = Flask(__name__)
+from flask import jsonify
 
-@app.route('/divide/<int:number1>/<int:number2>')
 def divide(number1, number2):
-    if number2==0:
-        response={
-        "status": 400,
-        "message": "Division by zero error",
-        "result": None
-        }
-    else:
+    try:
         result = number1 / number2
-        response={
+        response = {
             "status": 200,
             "result": result
+        }
+    except ZeroDivisionError:
+        response = {
+            "status": 400,
+            "message": "division by zero error",
+            "result": None
         }
     return jsonify(response)
