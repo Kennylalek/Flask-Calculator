@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: url('calculator.webp') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: white;
+            text-align: center;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.15); /* Darker overlay */
+            padding: 10%;
+            border-radius: 10px;
+            max-width: 100%;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0 0 20px;
+            font-weight: bold;
+        }
+
+        h1 span {
+            color: #3498db; /* Light blue color */
+        }
+        p span{
+         color: #3498db ; 
+        }
+
+        p, ul {
+            font-size: 18px;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        /* .example {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+        } */
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>WELCOME TO OUR <span>WEBSITE</span></h1>
+        <p>To use our calculator, simply enter the numbers and operator directly in the URL.</p>
+        <p class="example"><span>Example</span>: <strong>www.yourwebsite.com/calculate/add/5/3</strong> will add 5 and 3.</p>
+        
+        
+    </div>
+</body>
+</html>
