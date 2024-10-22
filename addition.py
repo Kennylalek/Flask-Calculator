@@ -2,7 +2,7 @@ from flask import jsonify
 
 def add(number1, number2):
     try:
-        result = number1 + number2
+        result = float(number1) + float(number2)
         status = "success"
     except Exception as e:
         result = 0
