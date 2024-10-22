@@ -3,7 +3,7 @@ from flask import jsonify
 def subtract(number1, number2):
     try:
         result = float(number1) - float(number2)
-        status = "success"
+        status = 200
     except Exception as e:
         result = 0
         status = f"error: {str(e)}"
@@ -13,6 +13,3 @@ def subtract(number1, number2):
         "result": result
     }
     return jsonify(response)
-# testing
-# if __name__ == '__main__':
-#     app.run(debug=True)
